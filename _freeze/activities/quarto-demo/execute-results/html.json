@@ -1,0 +1,15 @@
+{
+  "hash": "c40150fe57cdca72a55690675aafd65d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"My first Quarto document\"\nformat:\n  html:\n    toc: true\n    toc-depth: 1\n    embed-resources: true\n---\n\n\n# Intro\n\n**Macalester College** is in the *Twin Cities*. It has:\n\n-   four seasons\n-   bagpipes\n-   delightful students\n\nCheck it out for yourself:\n\n![](https://www.macalester.edu/about/wp-content/uploads/sites/191/2019/12/campusmap336.png)\n\n\\\n\\\n\n# Exercise 1: Deduce Quarto features\n\nCheck out the appearance and contents of this document. Thoughts?\n\nIn the toolbar at the top of this document, **Render** the .qmd file into a .html file. Where is this file stored? Thoughts about its appearance / contents? Can you edit it?\n\nToggling between the .qmd and .html files, explain the purpose of the following features in the .qmd file:\n\n`*`\n\n`**`\n\n`#`\n\n`-`\n\n`\\`\n\n`![](url)`\n\n\\\n\\\n\\\n\n# Exercise 2: Code\n\nHow does this appear in the .qmd? The .html? So...?!\n\nseq(from = 100, to = 1000, by = 50)\n\n\\\n\\\n\\\n\n# Exercise 3: Chunks\n\nQuarto isn't a mind reader -- we must distinguish R code from text. We do so by putting code inside an **R chunk**:\n\n\n::: {.cell}\n\n```{.r .cell-code}\nseq(from = 100, to = 1000, by = 50)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n [1]  100  150  200  250  300  350  400  450  500  550  600  650  700  750  800\n[16]  850  900  950 1000\n```\n\n\n:::\n:::\n\n\n-   Put the `seq()` code in the chunk.\n-   Press the green arrow in the top right of the chunk. What happens in the qmd?\n-   Render. What appears in the html: R code, output, or both?\n\n\\\n\\\n\\\n\n# Exercise 4: Practice\n\n-   Use R code to create the following sequence: 10 10 10 10\n-   Store the sequence as `four_tens`.\n-   Use an R function (which we haven't learned!) to add up the numbers in `four_tens`.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n(four_tens <- rep(x = 10, times = 4))\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 10 10 10 10\n```\n\n\n:::\n\n```{.r .cell-code}\nsum(four_tens)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 40\n```\n\n\n:::\n:::\n\n\n\n\\\n\\\n\\\n\n# Exercise 5: Fix this code\n\nCode is a form of communication, and the code below doesn't cut it.\n\nPut the code in a chunk and fix it.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nrep(x = 1, times = 10)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n [1] 1 1 1 1 1 1 1 1 1 1\n```\n\n\n:::\n\n```{.r .cell-code}\nseq(from = 100, to = 1000, length = 20)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n [1]  100.0000  147.3684  194.7368  242.1053  289.4737  336.8421  384.2105\n [8]  431.5789  478.9474  526.3158  573.6842  621.0526  668.4211  715.7895\n[15]  763.1579  810.5263  857.8947  905.2632  952.6316 1000.0000\n```\n\n\n:::\n\n```{.r .cell-code}\n(theNumberOfStudents <- 27)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 27\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
